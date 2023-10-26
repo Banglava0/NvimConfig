@@ -1,0 +1,13 @@
+*custom_bindings.txt* Custom Bindings
+
+Overview:
+This is a help file for the custom keybinds I setup in nvim.
+
+Custom Keybinds:
+- leader = space
+- '<leader>pv' : does ':Ex'
+
+
+Usage:
+To remember these 
+
