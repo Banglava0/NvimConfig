@@ -1,5 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/partha/.config/nvim/lua/partha'
+let g:netrw_dirhist_9='/home/partha/.config/nvim/lua'
+let g:netrw_dirhist_8='/home/partha/.config/nvim'
+let g:netrw_dirhist_7='/home/partha/.config/nvim/lua/partha'
+let g:netrw_dirhist_6='/home/partha/.config/nvim/lua'
+let g:netrw_dirhist_5='/home/partha/.config/nvim'
+let g:netrw_dirhist_4='/home/partha/.config/nvim/doc'
 let g:netrw_dirhist_3='/home/partha/.config/nvim'
-let g:netrw_dirhist_2='/home/partha/.config'
-let g:netrw_dirhist_1='/home/partha'
+let g:netrw_dirhist_2='/home/partha/.config/nvim/plugin'
+let g:netrw_dirhist_1='/home/partha/.config/nvim'

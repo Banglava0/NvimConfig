@@ -5,35 +5,38 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   use {
-      'nvim-telescope/telescope.nvim', tag = '0.1.4',
-      -- or                            , branch = '0.1.x',
-      requires = { {'nvim-lua/plenary.nvim'} }
+    'nvim-telescope/telescope.nvim', tag = '0.1.4',
+    -- or                            , branch = '0.1.x',
+    requires = { { 'nvim-lua/plenary.nvim' } }
   }
   use {
-      'VonHeikemen/lsp-zero.nvim',
-      branch = 'v3.x',
-      requires = {
-          --- Uncomment these if you want to manage LSP servers from neovim
-           {'williamboman/mason.nvim'},
-           {'williamboman/mason-lspconfig.nvim'},
+    'VonHeikemen/lsp-zero.nvim',
+    branch = 'v3.x',
+    requires = {
+      --- Uncomment these if you want to manage LSP servers from neovim
+      { 'williamboman/mason.nvim' },
+      { 'williamboman/mason-lspconfig.nvim' },
 
-          -- LSP Support
-          {'neovim/nvim-lspconfig'},
-          -- Autocompletion
-          {'hrsh7th/nvim-cmp'},
-          {'hrsh7th/cmp-nvim-lsp'},
-          {'L3MON4D3/LuaSnip'},
-      }
+      -- LSP Support
+      { 'neovim/nvim-lspconfig' },
+      -- Autocompletion
+      { 'hrsh7th/nvim-cmp' },
+      { 'hrsh7th/cmp-nvim-lsp' },
+      { 'L3MON4D3/LuaSnip' },
+    }
   }
-  use( 'nvim-treesitter/nvim-treesitter', {run=':TSUpdate'})
+  use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
   use('nvim-treesitter/playground')
   use('NLKNguyen/papercolor-theme')
-  use('morhetz/gruvbox')
+  use('ellisonleao/gruvbox.nvim')
   use { "catppuccin/nvim", as = "catppuccin" }
   use('neanias/everforest-nvim')
   use('nvim-lua/plenary.nvim')
   use('ThePrimeagen/harpoon')
-  use("christoomey/vim-tmux-navigator")
+  use('ThePrimeagen/vim-be-good')
+  use("mbbill/undotree")
+  use("nvim-treesitter/nvim-treesitter-context");
+  --use("tpope/vim-fugitive")
   -- test
   --use('vim-airline/vim-airline')
   --use('vim-airline/vim-airline-themes')

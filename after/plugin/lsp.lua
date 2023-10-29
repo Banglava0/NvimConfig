@@ -1,5 +1,8 @@
 local lsp_zero = require('lsp-zero')
 
+--require 'lspconfig'.clangd.setup {
+--    cmd = { "clangd", "--completion-style=detailed" }
+--}
 lsp_zero.on_attach(function(client, bufnr)
     local opts = { buffer = bufnr, remap = false }
     lsp_zero.buffer_autoformat()
