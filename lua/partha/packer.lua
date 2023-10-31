@@ -28,7 +28,8 @@ return require('packer').startup(function(use)
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
   use('nvim-treesitter/playground')
   use('NLKNguyen/papercolor-theme')
-  use('ellisonleao/gruvbox.nvim')
+  --use('sainnhe/gruvbox-material')
+  use('morhetz/gruvbox')
   use { "catppuccin/nvim", as = "catppuccin" }
   use('neanias/everforest-nvim')
   use('nvim-lua/plenary.nvim')
@@ -36,6 +37,9 @@ return require('packer').startup(function(use)
   use('ThePrimeagen/vim-be-good')
   use("mbbill/undotree")
   use("nvim-treesitter/nvim-treesitter-context");
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true } }
   --use("tpope/vim-fugitive")
   -- test
   --use('vim-airline/vim-airline')

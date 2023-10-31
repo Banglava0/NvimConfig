@@ -16,7 +16,7 @@ vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 
 vim.opt.hlsearch = false
-vim.opt.incsearch = false
+vim.opt.incsearch = true
 -- creates problem when changing variable name
 -- that matches with say a char in code
 --vim.opt.ignorecase = true
@@ -24,13 +24,13 @@ vim.opt.incsearch = false
 vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
-vim.opt.colorcolumn = "80"
-vim.opt.signcolumn = "yes"
+--vim.opt.colorcolumn = "80"
+--vim.opt.signcolumn = "yes"
 
 vim.opt.updatetime = 50
 
 
 vim.g.mapleader = " "
 
---vim.cmd('colorscheme gruvbox')
---vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
+vim.cmd('colorscheme gruvbox')
+vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
